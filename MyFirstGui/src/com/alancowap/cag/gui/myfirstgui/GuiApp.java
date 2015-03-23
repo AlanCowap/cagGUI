@@ -1,6 +1,17 @@
+/** 
+ * Simple GUI to demo text fields, buttons, and event handlers
+ * 
+ * 
+ *	 
+ * @author Alan Cowap 
+ * @version 1.0  
+ * @dependencies none
+ *  
+ *  
+ */ 
+
 package com.alancowap.cag.gui.myfirstgui;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
