@@ -59,6 +59,7 @@ public class GuiApp extends JFrame {
 		setContentPane(contentPane);
 		
 		textField = new JTextField();
+		textField.setToolTipText("Enter text to reverse or transfer here");
 		textField.setBounds(33, 57, 202, 49);
 		contentPane.add(textField);
 		textField.setColumns(10);
@@ -86,7 +87,8 @@ public class GuiApp extends JFrame {
 		contentPane.add(btnReverse);
 		
 		textField_2 = new JTextField();
-		textField_2.setBounds(31, 117, 204, 38);
+		textField_2.setToolTipText("reversed or transferred text will appear hear");
+		textField_2.setBounds(31, 117, 204, 49);
 		contentPane.add(textField_2);
 		textField_2.setColumns(10);
 		
