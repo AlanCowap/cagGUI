@@ -60,7 +60,7 @@ public class GuiApp extends JFrame {
 		
 		textField = new JTextField();
 		textField.setToolTipText("Enter text to reverse or transfer here");
-		textField.setBounds(33, 57, 202, 49);
+		textField.setBounds(10, 32, 225, 74);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
@@ -70,7 +70,7 @@ public class GuiApp extends JFrame {
 				textField.setText("");
 			}
 		});
-		btnClear.setBounds(245, 57, 89, 23);
+		btnClear.setBounds(245, 33, 89, 23);
 		contentPane.add(btnClear);
 		
 		btnReverse = new JButton("Reverse");
@@ -83,12 +83,12 @@ public class GuiApp extends JFrame {
 				textField.setText(sb.toString());
 			}
 		});
-		btnReverse.setBounds(245, 91, 89, 23);
+		btnReverse.setBounds(245, 67, 89, 23);
 		contentPane.add(btnReverse);
 		
 		textField_2 = new JTextField();
 		textField_2.setToolTipText("reversed or transferred text will appear hear");
-		textField_2.setBounds(31, 117, 204, 49);
+		textField_2.setBounds(10, 117, 225, 79);
 		contentPane.add(textField_2);
 		textField_2.setColumns(10);
 		
@@ -99,7 +99,7 @@ public class GuiApp extends JFrame {
 				textField_2.setText(textField.getText());
 			}
 		});
-		btnTransfer.setBounds(245, 125, 89, 23);
+		btnTransfer.setBounds(245, 101, 89, 23);
 		contentPane.add(btnTransfer);
 	}
 }
