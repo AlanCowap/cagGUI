@@ -55,7 +55,7 @@ public class GuiApp extends JFrame {
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 //		contentPane.setLayout(new BorderLayout(0, 0));
-		contentPane.setLayout(null); //we can put components where we want them, but resizing can be an issue!
+		contentPane.setLayout(null); //we can put components where we want them, but resizing can be an issue with no layout!
 		setContentPane(contentPane);
 		
 		textField = new JTextField();
