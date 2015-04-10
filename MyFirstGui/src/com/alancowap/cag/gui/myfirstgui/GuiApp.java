@@ -88,7 +88,7 @@ public class GuiApp extends JFrame {
 		
 		textField_2 = new JTextField();
 		textField_2.setToolTipText("reversed or transferred text will appear hear");
-		textField_2.setBounds(10, 117, 225, 79);
+		textField_2.setBounds(10, 152, 225, 79);
 		contentPane.add(textField_2);
 		textField_2.setColumns(10);
 		
@@ -99,7 +99,16 @@ public class GuiApp extends JFrame {
 				textField_2.setText(textField.getText());
 			}
 		});
-		btnTransfer.setBounds(245, 101, 89, 23);
+		btnTransfer.setBounds(76, 117, 89, 23);
 		contentPane.add(btnTransfer);
+		
+		JButton btnHide = new JButton("Hide");
+		btnHide.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				//TODO add hide code here
+			}
+		});
+		btnHide.setBounds(245, 101, 89, 23);
+		contentPane.add(btnHide);
 	}
 }
