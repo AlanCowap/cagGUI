@@ -28,6 +28,7 @@ public class GuiApp extends JFrame {
 	private JTextField textField;
 	private JButton btnReverse;
 	private JTextField textField_2;
+	private String msg;
 
 	/**
 	 * Launch the application.
@@ -105,10 +106,15 @@ public class GuiApp extends JFrame {
 		JButton btnHide = new JButton("Hide");
 		btnHide.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				//TODO add hide code here
+				hideText();
 			}
 		});
 		btnHide.setBounds(245, 101, 89, 23);
 		contentPane.add(btnHide);
 	}
+	
+	private void hideText(){
+		//TODO add code to un/hide text
+	}
+	
 }
