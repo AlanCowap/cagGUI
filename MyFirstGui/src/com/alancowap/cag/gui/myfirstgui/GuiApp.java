@@ -13,14 +13,22 @@
 package com.alancowap.cag.gui.myfirstgui;
 
 import java.awt.EventQueue;
+import java.awt.MenuItem;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JTextField;
 import javax.swing.JButton;
+
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.io.FileReader;
+import java.io.FileWriter;
+
+import javax.swing.JMenuBar;
+import javax.swing.JMenu;
+import javax.swing.JMenuItem;
 
 public class GuiApp extends JFrame {
 
@@ -29,6 +37,7 @@ public class GuiApp extends JFrame {
 	private JButton btnReverse;
 	private JTextField textField_2;
 	private String msg;
+	private JMenu menu;
 
 	/**
 	 * Launch the application.
@@ -111,10 +120,17 @@ public class GuiApp extends JFrame {
 		});
 		btnHide.setBounds(245, 101, 89, 23);
 		contentPane.add(btnHide);
+		
+		menu = new JMenu("New menu");
+		menu.setBounds(0, 0, 107, 22);
+		menu.add(new JMenuItem("Menu 1"));
+		menu.add(new JMenuItem("Menu 2"));
+		contentPane.add(menu);
 	}
 	
 	private void hideText(){
 		//TODO add code to un/hide text
 	}
+	
 	
 }
